@@ -19,12 +19,11 @@ const projects = [
       "capabilities. With its captivating 3D graphics, Havana Chronicle provides an immersive and" +
       "visually" +
       "appealing gaming experience.",
-    apps: [
-      {
-        url: "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
-        image: "images/project1/pic01.png",
-      },
-    ],
+    app: {
+      url: "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
+      imageLength: 7,
+      imagePath: "images/project1/",
+    },
     clients: ["C#"],
     servers: ["C#"],
     databases: ["MySQL"],
@@ -76,15 +75,15 @@ function generateProjectDetailElement(project) {
     '<!-- <a href="#" class="image main"><img src="images/pic01.png" alt="" /></a> -->' +
     '<div class="slider">' +
     '  <ul class="image-list">';
-  for (let i = 0; i < project.apps.length; i++) {
-    const app = project.apps[i];
+  for (let i = 0; i < project.app.imageLength; i++) {
+    const app = project.app;
     html +=
       '    <li><a href="' +
       app.url +
       '"' +
       '        class="image" target="_blank">' +
       '        <img src="' +
-      app.image +
+      `${app.imagePath}pic${i < 10 ? "0" + (i + 1) : i + 1}.png` +
       '" alt=""></li>';
   }
 
@@ -143,5 +142,33 @@ for (let i = 0; i < projects.length; i++) {
     projectDetail.innerHTML = generateProjectDetailElement(projects[i]);
 
     window.scrollTo(0, 0);
+
+    var slider = document.querySelector(".slider");
+    var imageList = document.querySelector(".image-list");
+    var images = document.querySelectorAll(".image-list li");
+
+    var currentIndex = 0;
+    var slideWidth = slider.clientWidth;
+
+    function slideTo(index) {
+      var offset = index * -slideWidth;
+      imageList.style.transform = "translateX(" + offset + "px)";
+      currentIndex = index;
+    }
+
+    function slideNext() {
+      var nextIndex = (currentIndex + 1) % images.length;
+      slideTo(nextIndex);
+    }
+
+    function slidePrevious() {
+      var previousIndex = currentIndex - 1;
+      if (previousIndex < 0) {
+        previousIndex = images.length - 1;
+      }
+      slideTo(previousIndex);
+    }
+
+    setInterval(slideNext, 3000); // Auto slide every 3 seconds
   });
 }
