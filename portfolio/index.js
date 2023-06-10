@@ -41,18 +41,22 @@ function generateProjectElement(project, i) {
     "<article>" +
     "<header>" +
     '<span class="date">April 24, 2017</span>' +
-    '<h2><span id="' +
+    '<h2><a href="#" id="' +
     `title_${i}` +
     '">' +
     project.title +
     "</span></h2>" +
     "</header>" +
-    '<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>' +
+    '<a href="#" class="image fit"><img src="' +
+    `${project.app.imagePath}pic01.png` +
+    '" alt="" /></a>' +
     "<p>" +
     project.description +
     "</p>" +
     '<ul class="actions special">' +
-    '<li><a href="#" class="button">Full Story</a></li>' +
+    '<li><a href="#" class="button" id="' +
+    `detail_${i}` +
+    '">Full Story</a></li>' +
     "</ul>" +
     "</article>"
   );
@@ -132,43 +136,49 @@ function generateProjectDetailElement(project) {
 
 projectsElement.innerHTML = projectHtml;
 
+function handleProjectClick(e, i) {
+  e.preventDefault();
+  const intro = document.getElementById("intro");
+  intro.style.display = "none";
+
+  const projectDetail = document.getElementById("projectDetail");
+  projectDetail.innerHTML = generateProjectDetailElement(projects[i]);
+
+  window.scrollTo(0, 0);
+
+  var slider = document.querySelector(".slider");
+  var imageList = document.querySelector(".image-list");
+  var images = document.querySelectorAll(".image-list li");
+
+  var currentIndex = 0;
+  var slideWidth = slider.clientWidth;
+
+  function slideTo(index) {
+    var offset = index * -slideWidth;
+    imageList.style.transform = "translateX(" + offset + "px)";
+    currentIndex = index;
+  }
+
+  function slideNext() {
+    var nextIndex = (currentIndex + 1) % images.length;
+    slideTo(nextIndex);
+  }
+
+  function slidePrevious() {
+    var previousIndex = currentIndex - 1;
+    if (previousIndex < 0) {
+      previousIndex = images.length - 1;
+    }
+    slideTo(previousIndex);
+  }
+
+  setInterval(slideNext, 3000); // Auto slide every 3 seconds
+}
+
 for (let i = 0; i < projects.length; i++) {
-  const nextBtn = document.getElementById(`title_${i}`);
-  nextBtn.addEventListener("click", () => {
-    const intro = document.getElementById("intro");
-    intro.style.display = "none";
+  const titleElement = document.getElementById(`title_${i}`);
+  titleElement.addEventListener("click", (e) => handleProjectClick(e, i));
 
-    const projectDetail = document.getElementById("projectDetail");
-    projectDetail.innerHTML = generateProjectDetailElement(projects[i]);
-
-    window.scrollTo(0, 0);
-
-    var slider = document.querySelector(".slider");
-    var imageList = document.querySelector(".image-list");
-    var images = document.querySelectorAll(".image-list li");
-
-    var currentIndex = 0;
-    var slideWidth = slider.clientWidth;
-
-    function slideTo(index) {
-      var offset = index * -slideWidth;
-      imageList.style.transform = "translateX(" + offset + "px)";
-      currentIndex = index;
-    }
-
-    function slideNext() {
-      var nextIndex = (currentIndex + 1) % images.length;
-      slideTo(nextIndex);
-    }
-
-    function slidePrevious() {
-      var previousIndex = currentIndex - 1;
-      if (previousIndex < 0) {
-        previousIndex = images.length - 1;
-      }
-      slideTo(previousIndex);
-    }
-
-    setInterval(slideNext, 3000); // Auto slide every 3 seconds
-  });
+  const detailElement = document.getElementById(`detail_${i}`);
+  detailElement.addEventListener("click", (e) => handleProjectClick(e, i));
 }
