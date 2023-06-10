@@ -1,5 +1,17 @@
-function Hello(props) {
-  return <h1>Hello {props.text}</h1>;
+function Main() {
+  return (
+    <div>
+      <Intro />
+      <Header />
+      <Navbar />
+      <div id="main">
+        <ProjectDetail />
+        <Projects />
+      </div>
+      <Footer />
+      <CopyRight />
+    </div>
+  );
 }
 
-ReactDOM.render(<Intro />, document.getElementById("root"));
+ReactDOM.render(<Main />, document.getElementById("root"));
