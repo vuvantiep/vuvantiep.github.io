@@ -60,7 +60,8 @@ function generateProjectDetailElement(project) {
     '<!-- <a href="#" class="image main"><img src="images/pic01.png" alt="" /></a> -->' +
     '<div class="slider">' +
     '  <ul class="image-list">';
-  for (let i = 0; i < project.app.imageLength; i++) {
+  let imageLength = getImagesCount(project.app.imagePath);
+  for (let i = 0; i < imageLength; i++) {
     const app = project.app;
     html +=
       '    <li><a href="' +
@@ -162,4 +163,25 @@ for (let i = 0; i < projects.length; i++) {
 
   const detailElement = document.getElementById(`detail_${i}`);
   detailElement.addEventListener("click", (e) => handleProjectClick(e, i));
+}
+
+
+function getImagesCount(filePath)
+{
+  const fs = require('fs');
+const path = require(filePath);
+
+const folderPath = 'path/to/folder';
+const filePattern = /\.png$/i; // Match files with ".png" extension
+
+fs.readdir(folderPath, (err, files) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+
+  const pngFiles = files.filter(file => filePattern.test(file));
+  // console.log(`Number of .png files: ${pngFiles.length}`);
+  return pngFiles.length;
+});
 }
