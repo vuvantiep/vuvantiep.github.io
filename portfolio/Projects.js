@@ -1,33 +1,34 @@
-function Projects(props) {
+function Projects({ projects, onClick }) {
   return (
     <section className="posts">
-      <article>
-        <header>
-          <span className="date">April 24, 2017</span>
-          <h2>
-            <a href="#">
-              Sed magna
-              <br />
-              ipsum faucibus
+      {projects &&
+        projects.map((p) => (
+          <article key={p.id}>
+            <header>
+              <span className="date">{p.projectDate}</span>
+              <h2>
+                <a href="#" onClick={(e) => onClick(e, p)}>
+                  {p.title}
+                </a>
+              </h2>
+            </header>
+            <a href="#" className="image fit">
+              <img
+                src={p.app.imagePath}
+                alt=""
+                onClick={(e) => onClick(e, p)}
+              />
             </a>
-          </h2>
-        </header>
-        <a href="#" className="image fit">
-          <img src="images/pic02.jpg" alt="" />
-        </a>
-        <p>
-          Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis
-          in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis
-          sagittis magna etiam.
-        </p>
-        <ul className="actions special">
-          <li>
-            <a href="#" className="button">
-              Full Story
-            </a>
-          </li>
-        </ul>
-      </article>
+            <p>{p.description}</p>
+            <ul className="actions special">
+              <li>
+                <a href="#" className="button" onClick={(e) => onClick(e, p)}>
+                  Full Story
+                </a>
+              </li>
+            </ul>
+          </article>
+        ))}
     </section>
   );
 }
