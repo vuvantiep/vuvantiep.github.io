@@ -15,10 +15,14 @@ fetch("assets/projects/projects.json")
 
     for (let i = 0; i < projects.length; i++) {
       const titleElement = document.getElementById(`title_${i}`);
-      titleElement.addEventListener("click", (e) => handleProjectClick(e, i));
+      titleElement.addEventListener("click", (e) =>
+        handleProjectClick(e, projects[i])
+      );
 
       const detailElement = document.getElementById(`detail_${i}`);
-      detailElement.addEventListener("click", (e) => handleProjectClick(e, i));
+      detailElement.addEventListener("click", (e) =>
+        handleProjectClick(e, projects[i])
+      );
     }
   })
   .catch((error) => {
@@ -69,7 +73,8 @@ function generateProjectDetailElement(project) {
     '<!-- <a href="#" class="image main"><img src="images/pic01.png" alt="" /></a> -->' +
     '<div class="slider">' +
     '  <ul class="image-list">';
-  let imageLength = getImagesCount(project.app.imagePath);
+
+  let imageLength = project.app.imageLength;
   for (let i = 0; i < imageLength; i++) {
     const app = project.app;
     html +=
@@ -125,13 +130,13 @@ function generateProjectDetailElement(project) {
   return html;
 }
 
-function handleProjectClick(e, i) {
+function handleProjectClick(e, project) {
   e.preventDefault();
   const intro = document.getElementById("intro");
   intro.style.display = "none";
 
   const projectDetail = document.getElementById("projectDetail");
-  projectDetail.innerHTML = generateProjectDetailElement(projects[i]);
+  projectDetail.innerHTML = generateProjectDetailElement(project);
 
   window.scrollTo(0, 0);
 
