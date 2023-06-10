@@ -1,21 +1,30 @@
 var jsonData = "";
-fetch('assets/projects/projects.json')
-.then(response => response.json())
-.then(data => {
-  // Process the JSON data
-  jsonData = data;
-  console.log(data);
-})
-.catch(error => {
-  // Handle any errors
-  console.error(error);
-});
-const projects = jsonData;
-const projectsElement = document.getElementById("projects");
-let projectHtml = "";
-for (let i = 0; i < projects.length; i++) {
-  projectHtml += generateProjectElement(projects[i], i);
-}
+fetch("assets/projects/projects.json")
+  .then((response) => response.json())
+  .then((data) => {
+    // Process the JSON data
+    jsonData = data;
+    const projects = jsonData;
+    const projectsElement = document.getElementById("projects");
+    let projectHtml = "";
+    for (let i = 0; i < projects.length; i++) {
+      projectHtml += generateProjectElement(projects[i], i);
+    }
+
+    projectsElement.innerHTML = projectHtml;
+
+    for (let i = 0; i < projects.length; i++) {
+      const titleElement = document.getElementById(`title_${i}`);
+      titleElement.addEventListener("click", (e) => handleProjectClick(e, i));
+
+      const detailElement = document.getElementById(`detail_${i}`);
+      detailElement.addEventListener("click", (e) => handleProjectClick(e, i));
+    }
+  })
+  .catch((error) => {
+    // Handle any errors
+    console.error(error);
+  });
 
 function generateProjectElement(project, i) {
   return (
@@ -116,8 +125,6 @@ function generateProjectDetailElement(project) {
   return html;
 }
 
-projectsElement.innerHTML = projectHtml;
-
 function handleProjectClick(e, i) {
   e.preventDefault();
   const intro = document.getElementById("intro");
@@ -157,31 +164,21 @@ function handleProjectClick(e, i) {
   setInterval(slideNext, 3000); // Auto slide every 3 seconds
 }
 
-for (let i = 0; i < projects.length; i++) {
-  const titleElement = document.getElementById(`title_${i}`);
-  titleElement.addEventListener("click", (e) => handleProjectClick(e, i));
+function getImagesCount(filePath) {
+  const fs = require("fs");
+  const path = require(filePath);
 
-  const detailElement = document.getElementById(`detail_${i}`);
-  detailElement.addEventListener("click", (e) => handleProjectClick(e, i));
-}
+  const folderPath = "path/to/folder";
+  const filePattern = /\.png$/i; // Match files with ".png" extension
 
+  fs.readdir(folderPath, (err, files) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
 
-function getImagesCount(filePath)
-{
-  const fs = require('fs');
-const path = require(filePath);
-
-const folderPath = 'path/to/folder';
-const filePattern = /\.png$/i; // Match files with ".png" extension
-
-fs.readdir(folderPath, (err, files) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-
-  const pngFiles = files.filter(file => filePattern.test(file));
-  // console.log(`Number of .png files: ${pngFiles.length}`);
-  return pngFiles.length;
-});
+    const pngFiles = files.filter((file) => filePattern.test(file));
+    // console.log(`Number of .png files: ${pngFiles.length}`);
+    return pngFiles.length;
+  });
 }
