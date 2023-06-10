@@ -1,35 +1,16 @@
-const projects = [
-  {
-    title: "Sed magna ipsum faucibus",
-    description:
-      "Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.",
-    date: "2020 - 2023",
-    detail:
-      "Havana Chronicle is an immersive gacha game set in the vibrant world of Havana. As a player, you" +
-      "will embark on an adventure, exploring the Havana planet and training a team of unique" +
-      "characters." +
-      "Collect items and resources to upgrade your team members and unlock their abilities. Manage your" +
-      "resources strategically to overcome challenges in PvE modes, ranging from easy to hard and" +
-      "nightmare" +
-      "difficulties. Engage in PvP battles in the arena to test your team's strength against other" +
-      "players." +
-      "Join or create guilds for multiplayer interactions, collaborate with others, and compete in PvP" +
-      "battles. Complete quests, manage your inventory, and utilize a skill system to enhance your" +
-      "team's" +
-      "capabilities. With its captivating 3D graphics, Havana Chronicle provides an immersive and" +
-      "visually" +
-      "appealing gaming experience.",
-    app: {
-      url: "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
-      imageLength: 7,
-      imagePath: "images/project1/",
-    },
-    clients: ["C#"],
-    servers: ["C#"],
-    databases: ["MySQL"],
-  },
-];
-
+var jsonData = "";
+fetch('assets/projects/projects.json')
+.then(response => response.json())
+.then(data => {
+  // Process the JSON data
+  jsonData = data;
+  console.log(data);
+})
+.catch(error => {
+  // Handle any errors
+  console.error(error);
+});
+const projects = jsonData;
 const projectsElement = document.getElementById("projects");
 let projectHtml = "";
 for (let i = 0; i < projects.length; i++) {
