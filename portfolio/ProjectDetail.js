@@ -1,7 +1,7 @@
 function ProjectDetail({ project }) {
   const imageNumbers = [];
   for (let i = 1; i <= project.app.imageLength; i++)
-    imageNumbers.push(i < 10 ? `0${i}` : `${i}`);
+    imageNumbers.push(`${i}`);
 
   return (
     <div id="projectDetail">
@@ -27,7 +27,7 @@ function ProjectDetail({ project }) {
         <ul className="actions special">
           <li>
             <a
-              href="https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1"
+              href={project.app.url}
               className="button large"
               target="_blank"
             >

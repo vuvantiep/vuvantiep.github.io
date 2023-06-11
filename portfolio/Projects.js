@@ -14,7 +14,7 @@ function Projects({ projects, onClick }) {
             </header>
             <a href="#" className="image fit">
               <img
-                src={p.app.imagePath}
+                src={`${p.app.imagePath}pic1.png`}
                 alt=""
                 onClick={(e) => onClick(e, p)}
               />

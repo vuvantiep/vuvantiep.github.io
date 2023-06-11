@@ -1,34 +1,112 @@
 [
   {
-    "id": 1,
-    "title": "1 Havana Chronicles",
-    "description": "Havana Chronicle is an immersive gacha game set in the vibrant world of Havana. Explore the city, train unique characters, and collect resources to upgrade your team. Engage in PvE challenges, PvP battles, and multiplayer interactions while enjoying captivating 3D graphics.",
+    "title": "Havana Chronicles",
+    "description": "Havana Chronicle: Explore Havana's vibrant world, collect and upgrade unique characters, and conquer PvE challenges. Engage in thrilling PvP battles, join guilds, complete quests, and unleash your team's skills in this visually stunning gacha game.",
     "date": "2020 - 2023",
-    "projectDate": "April 24, 2017",
     "detail": "Havana Chronicle is an immersive gacha game set in the vibrant world of Havana. As a player, you will embark on an adventure, exploring the Havana planet and training a team of unique characters. Collect items and resources to upgrade your team members and unlock their abilities. Manage your resources strategically to overcome challenges in PvE modes, ranging from easy to hard and nightmare difficulties. Engage in PvP battles in the arena to test your team's strength against other players. Join or create guilds for multiplayer interactions, collaborate with others, and compete in PvP battles. Complete quests, manage your inventory, and utilize a skill system to enhance your team's capabilities. With its captivating 3D graphics, Havana Chronicle provides an immersive and visually appealing gaming experience.",
     "app": {
       "url": "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
       "imageLength": 7,
       "imagePath": "images/project1/"
     },
-    "clients": ["C#", "Js"],
-    "servers": ["C#"],
+    "trailer": "https://youtu.be/OJQlHxowLSg",
+    "features": [
+      "Explore the vibrant world of Havana: Embark on an immersive adventure in a rich and captivating game world.",
+      "Gacha system: Collect and summon a diverse cast of unique characters to join your team.",
+      "Strategic resource management: Utilize resources strategically to upgrade your characters, inventory, and skills.",
+      "Engaging quests: Complete a variety of quests and challenges to progress and unlock new content.",
+      "Multiple game modes: Enjoy PvE battles, PvP arena fights, and guild-based multiplayer interactions.",
+      "Upgrade and customize: Enhance your characters' abilities, manage your inventory, and personalize your gameplay.",
+      "Join or create guilds: Collaborate with other players, participate in guild events, and strive for dominance.",
+      "Visually stunning graphics: Immerse yourself in a visually appealing game world with captivating 3D visuals."
+    ],
+    "clients": [
+      "C#",
+      "SpawnPool",
+      "AssetBundles Browser",
+      "CameraPath",
+      "Master Audio Plugin",
+      "Facebook SDK",
+      "Firebase SDK",
+      "Google SignIn",
+      "iTween",
+      "MeshBaker",
+      "NavMeshExtension",
+      "NGUI",
+      "AntiCheatToolkit",
+      "Beebyte - Offucator",
+      "SimpleZip",
+      "Mesh Simplify",
+      "AppleAuth",
+      "NaverCafeSDK",
+      "Newtonsoft Json",
+      "WebSocket Sharp",
+      "Appsflyer"
+    ],
+    "servers": [
+      "C#",
+      "Unity uLink",
+      "ASP.Net",
+      "RESTful API",
+      "WebSocket Sharp",
+      "MVC",
+      "AWS EC2"
+    ],
     "databases": ["MySQL"]
   },
   {
-    "id": 2,
-    "title": "2 Havana Chronicles",
-    "description": "Havana Chronicle is an immersive gacha game set in the vibrant world of Havana. Explore the city, train unique characters, and collect resources to upgrade your team. Engage in PvE challenges, PvP battles, and multiplayer interactions while enjoying captivating 3D graphics.",
+    "title": "Skull Arena",
+    "description": "Skull Arena is a multiplayer real-time strategy game featuring gacha mechanics, quests, and various game modes. Upgrade characters, inventory, and skills, while engaging in intense PvP battles and collaborative guild activities. Master resource management to dominate the arena in this immersive mobile gaming experience.",
     "date": "2020 - 2023",
-    "projectDate": "April 24, 2017",
-    "detail": "Havana Chronicle is an immersive gacha game set in the vibrant world of Havana. As a player, you will embark on an adventure, exploring the Havana planet and training a team of unique characters. Collect items and resources to upgrade your team members and unlock their abilities. Manage your resources strategically to overcome challenges in PvE modes, ranging from easy to hard and nightmare difficulties. Engage in PvP battles in the arena to test your team's strength against other players. Join or create guilds for multiplayer interactions, collaborate with others, and compete in PvP battles. Complete quests, manage your inventory, and utilize a skill system to enhance your team's capabilities. With its captivating 3D graphics, Havana Chronicle provides an immersive and visually appealing gaming experience.",
+    "detail": "Skull Arena is a multiplayer real-time strategy game available on the Google Play Store. In this game, players engage in intense battles, utilizing strategic tactics and managing resources to emerge victorious. The game incorporates gacha mechanics, allowing players to collect and summon unique characters with varying abilities and strengths. By completing quests and participating in various game modes, such as player versus environment (PvE) and player versus player (PvP), players can earn rewards and advance in the game. Progression involves upgrading characters, inventory, and skills to enhance their capabilities. Additionally, players can join or create guilds for multiplayer interactions, collaboration, and competing in guild-based activities. Skull Arena offers an immersive gaming experience that combines strategy, resource management, and multiplayer engagement.",
     "app": {
-      "url": "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
-      "imageLength": 7,
-      "imagePath": "images/project1/"
+      "url": "https://play.google.com/store/apps/details?id=com.peoplug.skullarena&hl=en&gl=US",
+      "imageLength": 8,
+      "imagePath": "images/project2/"
     },
-    "clients": ["C#"],
-    "servers": ["C#"],
+    "features": [
+      "Engaging multiplayer battles: Challenge players worldwide in real-time PvP combat.",
+      "Strategic resource management: Utilize resources wisely to build and strengthen your army.",
+      "Gacha system: Collect and unlock powerful heroes and units to enhance your roster.",
+      "Quest-based progression: Complete quests and objectives to earn rewards and advance in the game.",
+      "Multiple game modes: Enjoy a variety of gameplay modes, including PvP, PvE, and guild battles.",
+      "Character and inventory upgrades: Enhance your characters' abilities and equip them with powerful gear.",
+      "Guild system: Join or create guilds to collaborate with other players and dominate the game.",
+      "Immersive gameplay experience: Dive into a visually impressive world with stunning graphics and effects."
+    ],
+    "trailer": "https://youtu.be/FCo3LufLPKU",
+    "clients": [
+      "C#",
+      "SpawnPool",
+      "AssetBundles Browser",
+      "CameraPath",
+      "Master Audio Plugin",
+      "Facebook SDK",
+      "Firebase SDK",
+      "Google SignIn",
+      "iTween",
+      "MeshBaker",
+      "NavMeshExtension",
+      "NGUI",
+      "AntiCheatToolkit",
+      "Beebyte - Offucator",
+      "SimpleZip",
+      "Mesh Simplify",
+      "AppleAuth",
+      "NaverCafeSDK",
+      "Newtonsoft Json",
+      "WebSocket Sharp",
+      "Appsflyer"
+    ],
+    "servers": [
+      "C#",
+      "Unity uLink",
+      "ASP.Net",
+      "RESTful API",
+      "WebSocket Sharp",
+      "MVC",
+      "AWS EC2"
+    ],
     "databases": ["MySQL"]
   }
 ]
