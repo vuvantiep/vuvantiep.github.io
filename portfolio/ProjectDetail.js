@@ -1,7 +1,6 @@
 function ProjectDetail({ project }) {
   const imageNumbers = [];
-  for (let i = 1; i <= project.app.imageLength; i++)
-    imageNumbers.push(`${i}`);
+  for (let i = 1; i <= project.app.imageLength; i++) imageNumbers.push(`${i}`);
 
   return (
     <div id="projectDetail">
@@ -12,6 +11,11 @@ function ProjectDetail({ project }) {
             <a href="#">{project.title}</a>
           </h2>
           <p>{project.detail}</p>
+          <iframe
+            width="80%"
+            height="400"
+            src="https://www.youtube.com/embed/pWQ1GJODblo"
+          ></iframe>
         </header>
         <div className="slider">
           <ul className="image-list">
@@ -57,11 +61,7 @@ function ProjectDetail({ project }) {
         </section>
         {/* <ul className="actions special">
           <li>
-            <a
-              href={project.app.url}
-              className="button large"
-              target="_blank"
-            >
+            <a href={project.app.url} className="button large" target="_blank">
               Details
             </a>
           </li>
