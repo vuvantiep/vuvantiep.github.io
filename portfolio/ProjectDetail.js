@@ -38,7 +38,7 @@ function ProjectDetail({ project }) {
 
         <div>
           <div className="column">
-            <h3>Client:</h3>
+            <h3>Client</h3>
             <ul>
               {project.clients &&
                 project.clients.map((c, index) => <li key={index}>{c}</li>)}
@@ -46,7 +46,7 @@ function ProjectDetail({ project }) {
           </div>
 
           <div className="column">
-            <h3>Server:</h3>
+            <h3>Server</h3>
             <ul>
               {project.servers &&
                 project.servers.map((c, index) => <li key={index}>{c}</li>)}
@@ -54,13 +54,13 @@ function ProjectDetail({ project }) {
           </div>
 
           <div className="column">
-            <h3>Database:</h3>
+            <h3>Database</h3>
             <ul>
               {project.databases &&
                 project.databases.map((c, index) => <li key={index}>{c}</li>)}
             </ul>
           </div>
-        </div>
+        </div> */}
       </article>
     </div>
   );
