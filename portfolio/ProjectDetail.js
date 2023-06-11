@@ -24,7 +24,38 @@ function ProjectDetail({ project }) {
               ))}
           </ul>
         </div>
-        <ul className="actions special">
+        <section className="section-center">
+          <ul className="icons alt">
+          <li>
+              Details
+            </li>
+            <li>
+              <a
+                href={project.app.url}
+                className="icon brands alt fa-android"
+              >
+                <span className="label">Android</span>
+              </a>
+            </li>
+            {/* <li>
+              <a
+                href={project.app.url_iOS}
+                className="icon brands alt fa-apple"
+              >
+                <span className="label">iOS</span>
+              </a>
+            </li> */}
+            <li>
+              <a
+                href={project.trailer}
+                className="icon brands alt fa-youtube"
+              >
+                <span className="label">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        {/* <ul className="actions special">
           <li>
             <a
               href={project.app.url}
@@ -34,11 +65,19 @@ function ProjectDetail({ project }) {
               Details
             </a>
           </li>
-        </ul>
-
+        </ul> */}
+        {/* <div className="column"> */}
+            <h2>Features</h2>
+            <ul>
+              {project.features &&
+                project.features.map((c, index) => <li key={index}>
+                <span className="bullet">&#8226;</span> {c}
+              </li>)}
+            </ul>
+          {/* </div> */}
         <div>
           <div className="column">
-            <h3>Client:</h3>
+            <h3>Client</h3>
             <ul>
               {project.clients &&
                 project.clients.map((c, index) => <li key={index}>{c}</li>)}
@@ -46,7 +85,7 @@ function ProjectDetail({ project }) {
           </div>
 
           <div className="column">
-            <h3>Server:</h3>
+            <h3>Server</h3>
             <ul>
               {project.servers &&
                 project.servers.map((c, index) => <li key={index}>{c}</li>)}
@@ -54,7 +93,7 @@ function ProjectDetail({ project }) {
           </div>
 
           <div className="column">
-            <h3>Database:</h3>
+            <h3>Database</h3>
             <ul>
               {project.databases &&
                 project.databases.map((c, index) => <li key={index}>{c}</li>)}

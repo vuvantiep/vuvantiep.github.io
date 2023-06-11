@@ -6,6 +6,7 @@
     "detail": "Havana Chronicle is an immersive gacha game set in the vibrant world of Havana. As a player, you will embark on an adventure, exploring the Havana planet and training a team of unique characters. Collect items and resources to upgrade your team members and unlock their abilities. Manage your resources strategically to overcome challenges in PvE modes, ranging from easy to hard and nightmare difficulties. Engage in PvP battles in the arena to test your team's strength against other players. Join or create guilds for multiplayer interactions, collaborate with others, and compete in PvP battles. Complete quests, manage your inventory, and utilize a skill system to enhance your team's capabilities. With its captivating 3D graphics, Havana Chronicle provides an immersive and visually appealing gaming experience.",
     "app": {
       "url": "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
+      "url_iOS": "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
       "imageLength": 7,
       "imagePath": "images/project1/"
     },
@@ -61,6 +62,7 @@
     "detail": "Skull Arena is a multiplayer real-time strategy game available on the Google Play Store. In this game, players engage in intense battles, utilizing strategic tactics and managing resources to emerge victorious. The game incorporates gacha mechanics, allowing players to collect and summon unique characters with varying abilities and strengths. By completing quests and participating in various game modes, such as player versus environment (PvE) and player versus player (PvP), players can earn rewards and advance in the game. Progression involves upgrading characters, inventory, and skills to enhance their capabilities. Additionally, players can join or create guilds for multiplayer interactions, collaboration, and competing in guild-based activities. Skull Arena offers an immersive gaming experience that combines strategy, resource management, and multiplayer engagement.",
     "app": {
       "url": "https://play.google.com/store/apps/details?id=com.peoplug.skullarena&hl=en&gl=US",
+      "url_iOS": "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
       "imageLength": 8,
       "imagePath": "images/project2/"
     },
