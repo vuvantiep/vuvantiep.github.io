@@ -11,11 +11,6 @@ function ProjectDetail({ project }) {
             <a href="#">{project.title}</a>
           </h2>
           <p>{project.detail}</p>
-          <iframe
-            width="80%"
-            height="400"
-            src="https://www.youtube.com/embed/pWQ1GJODblo"
-          ></iframe>
         </header>
         <div className="slider">
           <ul className="image-list">
@@ -28,11 +23,21 @@ function ProjectDetail({ project }) {
               ))}
           </ul>
         </div>
+        <div>
+        <section className="section-center">
+        <iframe
+            width="80%"
+            height="400"
+            src={project.trailer}
+          ></iframe>
+        </section>
+        </div>
+        <br></br>
         <section className="section-center">
           <ul className="icons alt">
-          <li>
+          {/* <li>
               Details
-            </li>
+            </li> */}
             <li>
               <a
                 href={project.app.url}
@@ -49,14 +54,14 @@ function ProjectDetail({ project }) {
                 <span className="label">iOS</span>
               </a>
             </li> */}
-            <li>
+            {/* <li>
               <a
                 href={project.trailer}
                 className="icon brands alt fa-youtube"
               >
                 <span className="label">Youtube</span>
               </a>
-            </li>
+            </li> */}
           </ul>
         </section>
         {/* <ul className="actions special">
