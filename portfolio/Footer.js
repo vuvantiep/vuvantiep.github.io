@@ -26,7 +26,7 @@ function Footer() {
                 href="https://www.linkedin.com/in/vu-tiep-b00525197/"
                 className="icon brands alt fa-linkedin"
               >
-                <span className="label">GitHub</span>
+                <span className="label">Linkedin</span>
               </a>
             </li>
             <li>
@@ -34,7 +34,7 @@ function Footer() {
                 href="https://wa.me/qr/IY4YSZ45QFKKJ1"
                 className="icon brands alt fa-whatsapp"
               >
-                <span className="label">whatsapp</span>
+                <span className="label">Whatsapp</span>
               </a>
             </li>
             <li>
