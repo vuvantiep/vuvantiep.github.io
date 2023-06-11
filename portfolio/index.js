@@ -24,6 +24,8 @@ fetch("assets/projects/projects.json")
         handleProjectClick(e, projects[i])
       );
     }
+
+    handleProjectClick(null, projects[0], true);
   })
   .catch((error) => {
     // Handle any errors
@@ -34,7 +36,7 @@ function generateProjectElement(project, i) {
   return (
     "<article>" +
     "<header>" +
-    '<span class="date">April 24, 2017</span>' +
+    `<span class="date"> ${project.date}</span>` +
     '<h2><a href="#" id="' +
     `title_${i}` +
     '">' +
@@ -42,7 +44,7 @@ function generateProjectElement(project, i) {
     "</span></h2>" +
     "</header>" +
     '<a href="#" class="image fit"><img src="' +
-    `${project.app.imagePath}pic01.png` +
+    `${project.app.imagePath}pic1.png` +
     '" alt="" /></a>' +
     "<p>" +
     project.description +
@@ -57,7 +59,7 @@ function generateProjectElement(project, i) {
 }
 
 function generateProjectDetailElement(project) {
-  let html =
+  let result =
     '<article class="post featured">' +
     '<header class="major">' +
     '  <span class="date">' +
@@ -68,53 +70,66 @@ function generateProjectDetailElement(project) {
     "    </a></h2>" +
     "  <p>" +
     project.detail +
-    "  </p>" +
-    "</header>" +
-    '<!-- <a href="#" class="image main"><img src="images/pic01.png" alt="" /></a> -->' +
+    "  </p>" ;
+  result += generateSlideElement(project);
+  
+  result +=
+    "  </ul>" +
+    "</div>" +
+    '<ul class="actions special">' +
+    `  <li><a href="${project.app.url}"` +
+    '      class="button large" target="_blank">Details</a></li>' +
+    "</ul>";
+  result += generateTechnologyElement(project);
+
+  result += "  </ul>" + "</div>" + "</p>" + "</article>";
+
+  return result;
+}
+function generateSlideElement(project) {
+  var result = "</header>" +
+    '<!-- <a href="#" class="image main"><img src="images/pic1.png" alt="" /></a> -->' +
     '<div class="slider">' +
     '  <ul class="image-list">';
 
   let imageLength = project.app.imageLength;
   for (let i = 0; i < imageLength; i++) {
     const app = project.app;
-    html +=
+    result += 
       '    <li><a href="' +
       app.url +
       '"' +
       '        class="image" target="_blank">' +
       '        <img src="' +
-      `${app.imagePath}pic${i < 10 ? "0" + (i + 1) : i + 1}.png` +
+      `${app.imagePath}pic${i+1}.png` +
       '" alt=""></li>';
   }
-
-  html +=
-    "  </ul>" +
-    "</div>" +
-    '<ul class="actions special">' +
-    '  <li><a href="https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1"' +
-    '      class="button large" target="_blank">Details</a></li>' +
-    "</ul>" +
-    "<p>" +
+  return result;
+}
+function generateTechnologyElement(project) {
+  var result = "<p>" +
     '<div class="column">' +
-    "  <h3>Client:</h3>" +
+    "  <h3>Client</h3>" +
     "  <ul>";
 
-  for (let i = 0; i < project.clients.length; i++) {
+  for (var i = 0; i < project.clients.length; i++) {
     const client = project.clients[i];
-    html += "    <li>" + client + "</li>";
+    result += "    <li>" + client + "</li>";
   }
-  html +=
+  result +=
     "  </ul>" +
-    "</div>" +
-    '<div class="column">' +
+    "</div>";
+
+  result +=
+  '<div class="column">' +
     "  <h3>Server:</h3>" +
     "  <ul>";
 
   for (let i = 0; i < project.servers.length; i++) {
     const server = project.servers[i];
-    html += "    <li>" + server + "</li>";
+    result += "    <li>" + server + "</li>";
   }
-  html +=
+  result +=
     "  </ul>" +
     "</div>" +
     '<div class="column">' +
@@ -122,18 +137,18 @@ function generateProjectDetailElement(project) {
     "  <ul>";
   for (let i = 0; i < project.databases.length; i++) {
     const database = project.databases[i];
-    html += "    <li>" + database + "</li>";
+    result += "    <li>" + database + "</li>";
   }
-
-  html += "  </ul>" + "</div>" + "</p>" + "</article>";
-
-  return html;
+  return result;
 }
 
-function handleProjectClick(e, project) {
-  e.preventDefault();
-  const intro = document.getElementById("intro");
-  intro.style.display = "none";
+function handleProjectClick(e, project, isFirstLoad) {
+  if (e) e.preventDefault();
+
+  if (!isFirstLoad) {
+    const intro = document.getElementById("intro");
+    intro.style.display = "none";
+  }
 
   const projectDetail = document.getElementById("projectDetail");
   projectDetail.innerHTML = generateProjectDetailElement(project);
