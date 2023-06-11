@@ -10,7 +10,7 @@
       "imageLength": 7,
       "imagePath": "images/project1/"
     },
-    "trailer": "https://youtu.be/OJQlHxowLSg",
+    "trailer": "https://www.youtube.com/embed/OJQlHxowLSg",
     "features": [
       "Explore the vibrant world of Havana: Embark on an immersive adventure in a rich and captivating game world.",
       "Gacha system: Collect and summon a diverse cast of unique characters to join your team.",
@@ -76,7 +76,7 @@
       "Guild system: Join or create guilds to collaborate with other players and dominate the game.",
       "Immersive gameplay experience: Dive into a visually impressive world with stunning graphics and effects."
     ],
-    "trailer": "https://youtu.be/FCo3LufLPKU",
+    "trailer": "https://www.youtube.com/embed/FCo3LufLPKU",
     "clients": [
       "C#",
       "SpawnPool",
