@@ -12,14 +12,20 @@
     },
     "trailer": "https://www.youtube.com/embed/OJQlHxowLSg",
     "features": [
-      "Explore the vibrant world of Havana: Embark on an immersive adventure in a rich and captivating game world.",
+      "Account System",
       "Gacha system: Collect and summon a diverse cast of unique characters to join your team.",
-      "Strategic resource management: Utilize resources strategically to upgrade your characters, inventory, and skills.",
-      "Engaging quests: Complete a variety of quests and challenges to progress and unlock new content.",
+      "Tutorial System: Utilize resources strategically to upgrade your characters, inventory, and skills.",
+      "Quest-based progression: Complete quests and objectives to earn rewards and advance in the game.",
       "Multiple game modes: Enjoy PvE battles, PvP arena fights, and guild-based multiplayer interactions.",
       "Upgrade and customize: Enhance your characters' abilities, manage your inventory, and personalize your gameplay.",
       "Join or create guilds: Collaborate with other players, participate in guild events, and strive for dominance.",
-      "Visually stunning graphics: Immerse yourself in a visually appealing game world with captivating 3D visuals."
+      "Skill System: ",
+      "Inventory System: ",
+      "Inventory System: ",
+      "Encyclopedia: ",
+      "MailBox: ",
+      "In-game Chat: ",
+      "In-game Shop, Market: "
     ],
     "technologies": [
       {
@@ -60,16 +66,31 @@
         ]
       },
       {
-        "Chat": ["C#", "WebSocket Sharp"]
+        "Chat": [
+          "C#",
+          "WebSocket Sharp"
+        ]
       },
       {
-        "CMS": ["C#", "RESTful API", "MVC", "ASP.Net"]
+        "CMS": [
+          "C#",
+          "RESTful API",
+          "MVC",
+          "ASP.Net"
+        ]
       },
       {
-        "Web API": ["C#", "RESTful API", "MVC", "ASP.Net"]
+        "Web API": [
+          "C#",
+          "RESTful API",
+          "MVC",
+          "ASP.Net"
+        ]
       },
       {
-        "databases": ["MySQL"]
+        "databases": [
+          "MySQL"
+        ]
       },
       {
         "Backend Infrastructure": [
@@ -126,7 +147,9 @@
         ]
       },
       {
-        "databases": ["Firebase Storage"]
+        "databases": [
+          "Firebase Storage"
+        ]
       }
     ]
   },
@@ -178,7 +201,9 @@
         ]
       },
       {
-        "databases": ["Firebase Storage"]
+        "databases": [
+          "Firebase Storage"
+        ]
       }
     ]
   }
