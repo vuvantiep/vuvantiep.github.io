@@ -34,6 +34,8 @@ function Main() {
     var imageList = document.querySelector(".image-list");
     var images = document.querySelectorAll(".image-list li");
 
+    if (!slider) return;
+
     var currentIndex = 0;
     var slideWidth = slider.clientWidth;
 
