@@ -4846,11 +4846,11 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 @media screen and (max-width: 980px) {
 
-	body.is-navPanel-visible #wrapper {
+	#layout.is-navPanel-visible #wrapper {
 		opacity: 0.5;
 	}
 
-	body.is-navPanel-visible #navPanel {
+	#layout.is-navPanel-visible #navPanel {
 		-moz-transform: translateX(0);
 		-webkit-transform: translateX(0);
 		-ms-transform: translateX(0);
