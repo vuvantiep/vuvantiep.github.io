@@ -96,11 +96,11 @@ function Main() {
       <Header />
       <Navbar currentTab={currentTab} onTabChange={hanldeTabChange} />
       <div id="main">
+        {currentTab === 1 && selectedProject && (
+          <ProjectDetail project={selectedProject} />
+        )}
         {currentTab === 1 && (
-          <div>
-            {selectedProject && <ProjectDetail project={selectedProject} />}
-            <Projects projects={projects} onClick={handleProjectClick} />
-          </div>
+          <Projects projects={projects} onClick={handleProjectClick} />
         )}
 
         {currentTab === 2 && <Background backgrounds={backgrounds} />}
