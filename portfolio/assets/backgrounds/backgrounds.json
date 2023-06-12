@@ -1,0 +1,59 @@
+[
+  {
+    "game client": [
+      "Unity Engine",
+      "C#",
+      "RESTful API",
+      "SpawnPool",
+      "WebSocket Sharp",
+      "NGUI",
+      "AssetBundles Browser",
+      "CameraPath",
+      "iTween",
+      "MeshBaker",
+      "NavMeshExtension",
+      "Master Audio Plugin",
+      "SimpleZip",
+      "Mesh Simplify",
+      "Newtonsoft Json",
+      "Facebook SDK",
+      "Firebase SDK",
+      "Google SignIn",
+      "AppleAuth",
+      "NaverCafeSDK",
+      "Appsflyer",
+      "AntiCheatToolkit",
+      "Beebyte - Offucator"
+    ]
+  },
+  {
+    "Game Server": [
+      "C#",
+      "Unity uLink",
+      "RESTful API",
+      "WebSocket Sharp",
+      "MVC",
+      "AWS EC2"
+    ]
+  },
+  {
+    "Chat": ["C#", "WebSocket Sharp"]
+  },
+  {
+    "CMS": ["C#", "RESTful API", "MVC", "ASP.Net"]
+  },
+  {
+    "Web API": ["C#", "RESTful API", "MVC", "ASP.Net"]
+  },
+  {
+    "databases": ["MySQL"]
+  },
+  {
+    "Backend Infrastructure": [
+      "AWS",
+      "Google Cloud Service",
+      "Naver Cloud",
+      "Alibaba"
+    ]
+  }
+]

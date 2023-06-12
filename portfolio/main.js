@@ -4,6 +4,9 @@ function Main() {
   const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState();
   const [showIntro, setShowIntro] = useState(true);
+  const [currentTab, setCurrentTab] = useState(1);
+  const [backgrounds, setBackgrounds] = useState([]);
+  const [educations, setEducations] = useState([]);
 
   useEffect(() => {
     fetch("assets/projects/projects.json")
@@ -12,6 +15,28 @@ function Main() {
         setProjects(data);
         setSelectedProject(data[0]);
         executeSlider();
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch("assets/backgrounds/backgrounds.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setBackgrounds(data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch("assets/educations/educations.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setEducations(data);
       })
       .catch((error) => {
         console.error(error);
@@ -61,14 +86,26 @@ function Main() {
     setInterval(slideNext, 3000); // Auto slide every 3 seconds
   }
 
+  function hanldeTabChange(tab) {
+    setCurrentTab(tab);
+  }
+
   return (
     <div>
       {showIntro && <Intro />}
       <Header />
-      <Navbar />
+      <Navbar currentTab={currentTab} onTabChange={hanldeTabChange} />
       <div id="main">
-        {selectedProject && <ProjectDetail project={selectedProject} />}
-        <Projects projects={projects} onClick={handleProjectClick} />
+        {currentTab === 1 && (
+          <div>
+            {selectedProject && <ProjectDetail project={selectedProject} />}
+            <Projects projects={projects} onClick={handleProjectClick} />
+          </div>
+        )}
+
+        {currentTab === 2 && <Background backgrounds={backgrounds} />}
+
+        {currentTab === 3 && <Education educations={educations} />}
       </div>
       <Footer />
       <CopyRight />
