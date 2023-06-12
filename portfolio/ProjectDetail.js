@@ -57,7 +57,7 @@ function ProjectDetail({ project }) {
             </li> */}
           </ul>
         </section>
-        <section className="section-center">
+        <section>
           <h2>Features</h2>
           <ul>
             {project.features &&
