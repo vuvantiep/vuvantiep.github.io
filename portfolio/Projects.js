@@ -2,8 +2,8 @@ function Projects({ projects, onClick }) {
   return (
     <section className="posts">
       {projects &&
-        projects.map((p) => (
-          <article key={p.id}>
+        projects.map((p, index) => (
+          <article key={index}>
             <header>
               <span className="date">{p.projectDate}</span>
               <h2>
