@@ -71,7 +71,7 @@ function ProjectDetail({ project }) {
           {project.technologies &&
             project.technologies.map((technology, index) => (
               <div className="column" key={index}>
-                <h3>{Object.keys(technology)[0]}</h3>
+                <h4>{Object.keys(technology)[0]}</h4>
                 <ul>
                   {technology[Object.keys(technology)[0]].map((x) => (
                     <li key={x}>

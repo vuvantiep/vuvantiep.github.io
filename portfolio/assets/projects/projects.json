@@ -23,35 +23,36 @@
     ],
     "technologies": [
       {
-        "clients": [
+        "game client": [
+          "Unity Engine",
           "C#",
+          "RESTful API",
           "SpawnPool",
+          "WebSocket Sharp",
+          "NGUI",
           "AssetBundles Browser",
           "CameraPath",
-          "Master Audio Plugin",
-          "Facebook SDK",
-          "Firebase SDK",
-          "Google SignIn",
           "iTween",
           "MeshBaker",
           "NavMeshExtension",
-          "NGUI",
-          "AntiCheatToolkit",
-          "Beebyte - Offucator",
+          "Master Audio Plugin",
           "SimpleZip",
           "Mesh Simplify",
+          "Newtonsoft Json",
+          "Facebook SDK",
+          "Firebase SDK",
+          "Google SignIn",
           "AppleAuth",
           "NaverCafeSDK",
-          "Newtonsoft Json",
-          "WebSocket Sharp",
-          "Appsflyer"
+          "Appsflyer",
+          "AntiCheatToolkit",
+          "Beebyte - Offucator"
         ]
       },
       {
-        "servers": [
+        "Game Server": [
           "C#",
           "Unity uLink",
-          "ASP.Net",
           "RESTful API",
           "WebSocket Sharp",
           "MVC",
@@ -59,7 +60,24 @@
         ]
       },
       {
+        "Chat": ["C#", "WebSocket Sharp"]
+      },
+      {
+        "CMS": ["C#", "RESTful API", "MVC", "ASP.Net"]
+      },
+      {
+        "Web API": ["C#", "RESTful API", "MVC", "ASP.Net"]
+      },
+      {
         "databases": ["MySQL"]
+      },
+      {
+        "Backend Infrastructure": [
+          "AWS",
+          "Google Cloud Service",
+          "Naver Cloud",
+          "Alibaba"
+        ]
       }
     ]
   },
@@ -85,38 +103,31 @@
       "Immersive gameplay experience: Dive into a visually impressive world with stunning graphics and effects."
     ],
     "trailer": "https://www.youtube.com/embed/FCo3LufLPKU",
-    "clients": [
-      "C#",
-      "SpawnPool",
-      "AssetBundles Browser",
-      "CameraPath",
-      "Master Audio Plugin",
-      "Facebook SDK",
-      "Firebase SDK",
-      "Google SignIn",
-      "iTween",
-      "MeshBaker",
-      "NavMeshExtension",
-      "NGUI",
-      "AntiCheatToolkit",
-      "Beebyte - Offucator",
-      "SimpleZip",
-      "Mesh Simplify",
-      "AppleAuth",
-      "NaverCafeSDK",
-      "Newtonsoft Json",
-      "WebSocket Sharp",
-      "Appsflyer"
-    ],
-    "servers": [
-      "C#",
-      "Unity uLink",
-      "ASP.Net",
-      "RESTful API",
-      "WebSocket Sharp",
-      "MVC",
-      "AWS EC2"
-    ],
-    "databases": ["MySQL"]
+    "technologies": [
+      {
+        "game client": [
+          "Unity Engine",
+          "C#",
+          "RESTful API",
+          "SpawnPool",
+          "NGUI",
+          "AssetBundles Browser",
+          "CameraPath",
+          "iTween",
+          "Master Audio Plugin",
+          "Newtonsoft Json",
+          "Facebook SDK",
+          "Firebase SDK",
+          "Google SignIn",
+          "AppleAuth",
+          "Appsflyer",
+          "AntiCheatToolkit",
+          "Beebyte - Offucator"
+        ]
+      },
+      {
+        "databases": ["Firebase Storage"]
+      }
+    ]
   }
 ]
