@@ -23,7 +23,7 @@ function Projects({ projects, onClick }) {
             <ul className="actions special">
               <li>
                 <a href="#" className="button" onClick={(e) => onClick(e, p)}>
-                  Full Story
+                  Details
                 </a>
               </li>
             </ul>
