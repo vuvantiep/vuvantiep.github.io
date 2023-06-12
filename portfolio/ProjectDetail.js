@@ -24,25 +24,18 @@ function ProjectDetail({ project }) {
           </ul>
         </div>
         <div>
-        <section className="section-center">
-        <iframe
-            width="80%"
-            height="400"
-            src={project.trailer}
-          ></iframe>
-        </section>
+          <section className="section-center">
+            <iframe width="80%" height="400" src={project.trailer}></iframe>
+          </section>
         </div>
         <br></br>
-        <section >
+        <section>
           <ul className="icons alt">
-          {/* <li>
+            {/* <li>
               Details
             </li> */}
             <li>
-              <a
-                href={project.app.url}
-                className="icon brands alt fa-android"
-              >
+              <a href={project.app.url} className="icon brands alt fa-android">
                 <span className="label">Android</span>
               </a>
             </li>
@@ -65,27 +58,31 @@ function ProjectDetail({ project }) {
           </ul>
         </section>
         <section className="section-center">
-            <h2>Features</h2>
-            <ul>
-              {project.features &&
-                project.features.map((c, index) => <li key={index}>
-                <span className="bullet">&#8226;</span> {c}
-              </li>)}
-            </ul>
-            <h2>Technologies</h2>
-            {project.technologies &&
-                project.technologies.map((technology) => {
-                <div className="column">
-                  {console.log(Object.keys(technology)[0])}
-                <h3> {Object.keys(technology)[0]} </h3>
+          <h2>Features</h2>
+          <ul>
+            {project.features &&
+              project.features.map((c, index) => (
+                <li key={index}>
+                  <span className="bullet">&#8226;</span> {c}
+                </li>
+              ))}
+          </ul>
+          <h2>Technologies</h2>
+          {project.technologies &&
+            project.technologies.map((technology, index) => (
+              <div className="column" key={index}>
+                <h3>{Object.keys(technology)[0]}</h3>
                 <ul>
-     
+                  {technology[Object.keys(technology)[0]].map((x) => (
+                    <li key={index}>
+                      <span className="bullet">&#8226;</span> {x}
+                    </li>
+                  ))}
                 </ul>
               </div>
-              })
-            }
+            ))}
         </section>
-        
+
         {/* <div>
           <div className="column">
             <h3>Client</h3>
