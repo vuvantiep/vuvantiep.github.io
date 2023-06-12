@@ -21,39 +21,47 @@
       "Join or create guilds: Collaborate with other players, participate in guild events, and strive for dominance.",
       "Visually stunning graphics: Immerse yourself in a visually appealing game world with captivating 3D visuals."
     ],
-    "clients": [
-      "C#",
-      "SpawnPool",
-      "AssetBundles Browser",
-      "CameraPath",
-      "Master Audio Plugin",
-      "Facebook SDK",
-      "Firebase SDK",
-      "Google SignIn",
-      "iTween",
-      "MeshBaker",
-      "NavMeshExtension",
-      "NGUI",
-      "AntiCheatToolkit",
-      "Beebyte - Offucator",
-      "SimpleZip",
-      "Mesh Simplify",
-      "AppleAuth",
-      "NaverCafeSDK",
-      "Newtonsoft Json",
-      "WebSocket Sharp",
-      "Appsflyer"
-    ],
-    "servers": [
-      "C#",
-      "Unity uLink",
-      "ASP.Net",
-      "RESTful API",
-      "WebSocket Sharp",
-      "MVC",
-      "AWS EC2"
-    ],
-    "databases": ["MySQL"]
+    "technologies": [
+      {
+        "clients": [
+          "C#",
+          "SpawnPool",
+          "AssetBundles Browser",
+          "CameraPath",
+          "Master Audio Plugin",
+          "Facebook SDK",
+          "Firebase SDK",
+          "Google SignIn",
+          "iTween",
+          "MeshBaker",
+          "NavMeshExtension",
+          "NGUI",
+          "AntiCheatToolkit",
+          "Beebyte - Offucator",
+          "SimpleZip",
+          "Mesh Simplify",
+          "AppleAuth",
+          "NaverCafeSDK",
+          "Newtonsoft Json",
+          "WebSocket Sharp",
+          "Appsflyer"
+        ]
+      },
+      {
+        "servers": [
+          "C#",
+          "Unity uLink",
+          "ASP.Net",
+          "RESTful API",
+          "WebSocket Sharp",
+          "MVC",
+          "AWS EC2"
+        ]
+      },
+      {
+        "databases": ["MySQL"]
+      }
+    ]
   },
   {
     "title": "Skull Arena",
