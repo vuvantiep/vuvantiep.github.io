@@ -64,14 +64,7 @@ function ProjectDetail({ project }) {
             </li> */}
           </ul>
         </section>
-        {/* <ul className="actions special">
-          <li>
-            <a href={project.app.url} className="button large" target="_blank">
-              Details
-            </a>
-          </li>
-        </ul> */}
-        {/* <div className="column"> */}
+        <section className="section-center">
             <h2>Features</h2>
             <ul>
               {project.features &&
@@ -79,8 +72,21 @@ function ProjectDetail({ project }) {
                 <span className="bullet">&#8226;</span> {c}
               </li>)}
             </ul>
-          {/* </div> */}
-        <div>
+            <h2>Technologies</h2>
+            {project.technologies &&
+                project.technologies.map((technology) => {
+                <div className="column">
+                  {console.log(Object.keys(technology)[0])}
+                <h3> {Object.keys(technology)[0]} </h3>
+                <ul>
+     
+                </ul>
+              </div>
+              })
+            }
+        </section>
+        
+        {/* <div>
           <div className="column">
             <h3>Client</h3>
             <ul>
@@ -104,7 +110,7 @@ function ProjectDetail({ project }) {
                 project.databases.map((c, index) => <li key={index}>{c}</li>)}
             </ul>
           </div>
-        </div>
+        </div> */}
       </article>
     </div>
   );
