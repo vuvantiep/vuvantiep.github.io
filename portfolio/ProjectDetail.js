@@ -33,7 +33,7 @@ function ProjectDetail({ project }) {
         </section>
         </div>
         <br></br>
-        <section className="section-center">
+        <section >
           <ul className="icons alt">
           {/* <li>
               Details
