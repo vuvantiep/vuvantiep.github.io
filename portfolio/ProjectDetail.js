@@ -74,7 +74,7 @@ function ProjectDetail({ project }) {
                 <h3>{Object.keys(technology)[0]}</h3>
                 <ul>
                   {technology[Object.keys(technology)[0]].map((x) => (
-                    <li key={index}>
+                    <li key={x}>
                       <span className="bullet">&#8226;</span> {x}
                     </li>
                   ))}
