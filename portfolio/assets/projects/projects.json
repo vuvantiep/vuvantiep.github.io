@@ -83,7 +83,7 @@
   },
   {
     "title": "Skull Arena",
-    "description": "Skull Arena is a multiplayer real-time strategy game featuring gacha mechanics, quests, and various game modes. Upgrade characters, inventory, and skills, while engaging in intense PvP battles and collaborative guild activities. Master resource management to dominate the arena in this immersive mobile gaming experience.",
+    "description": "A multiplayer real-time strategy game featuring gacha mechanics, quests, and various game modes. Upgrade characters, inventory, and skills, while engaging in intense PvP battles and collaborative guild activities. Master resource management to dominate the arena in this immersive mobile gaming experience.",
     "date": "2020 - 2023",
     "detail": "Skull Arena is a multiplayer real-time strategy game available on the Google Play Store. In this game, players engage in intense battles, utilizing strategic tactics and managing resources to emerge victorious. The game incorporates gacha mechanics, allowing players to collect and summon unique characters with varying abilities and strengths. By completing quests and participating in various game modes, such as player versus environment (PvE) and player versus player (PvP), players can earn rewards and advance in the game. Progression involves upgrading characters, inventory, and skills to enhance their capabilities. Additionally, players can join or create guilds for multiplayer interactions, collaboration, and competing in guild-based activities. Skull Arena offers an immersive gaming experience that combines strategy, resource management, and multiplayer engagement.",
     "app": {
@@ -103,6 +103,58 @@
       "Immersive gameplay experience: Dive into a visually impressive world with stunning graphics and effects."
     ],
     "trailer": "https://www.youtube.com/embed/FCo3LufLPKU",
+    "technologies": [
+      {
+        "game client": [
+          "Unity Engine",
+          "C#",
+          "RESTful API",
+          "SpawnPool",
+          "NGUI",
+          "AssetBundles Browser",
+          "CameraPath",
+          "iTween",
+          "Master Audio Plugin",
+          "Newtonsoft Json",
+          "Facebook SDK",
+          "Firebase SDK",
+          "Google SignIn",
+          "AppleAuth",
+          "Appsflyer",
+          "AntiCheatToolkit",
+          "Beebyte - Offucator"
+        ]
+      },
+      {
+        "databases": ["Firebase Storage"]
+      }
+    ]
+  },
+  {
+    "title": "Empire Warrior TD",
+    "description": "A strategic tower defense game set in a fantasy world. Defend your empire by strategically placing towers, summoning heroes, and unleashing powerful spells to defeat waves of enemies",
+    "date": "2020 - 2023",
+    "detail": "Empire Warriors TD: Tower Defense Games invites you to embark on an epic journey through a fantastical realm where you must defend your empire at all costs. Strategically place a wide array of towers along enemy pathways, each with unique abilities and upgrade paths. Unleash the power of heroes, summoning them to the battlefield to aid in the fight against relentless waves of enemies. Harness devastating spells to turn the tide in your favor, obliterating foes with meteor showers and elemental storms. Navigate diverse landscapes and confront formidable adversaries, from fearsome orcs to powerful dragons. Engage in challenging game modes, including the endless mode for the ultimate test of endurance. Collect resources, unlock new abilities, and fortify your defenses to protect the empire from the encroaching darkness. Immerse yourself in visually stunning graphics, captivating sound effects, and addictive tower defense gameplay that will keep you engaged for hours on end.",
+    "app": {
+      "url": "https://play.google.com/store/apps/details?id=com.zitga.empire.warriors.td.tower.defense&hl=en&gl=US",
+      "url_iOS": "https://apps.apple.com/us/app/empire-warriors-offline-games/id1329443393",
+      "imageLength": 8,
+      "imagePath": "images/project3/"
+    },
+    "features": [
+      "Tower Defense Strategy - Strategically place towers along enemy pathways to defend your empire.",
+      "Diverse Tower Types - Deploy a wide array of towers, each with unique abilities and upgrade paths.",
+      "Hero Summoning - Summon mighty heroes with exceptional powers to aid in the battle against enemies.",
+      "Powerful Spells - Unleash devastating spells like meteor showers and elemental storms to defeat enemies.",
+      "Challenging Enemies - Face off against a variety of formidable foes, including orcs, dragons, and undead creatures.",
+      "Upgrade System - Improve towers, heroes, and spells with upgrades to enhance their combat effectiveness.",
+      "Engaging Game Modes - Experience different game modes, including the challenging Endless mode for endless waves of enemies.",
+      "Resource Collection - Collect valuable resources by successfully defending your empire to unlock new abilities and strengthen your arsenal.",
+      "Visually Stunning Graphics - Immerse yourself in the captivating fantasy world with visually impressive graphics.",
+      "Addictive Gameplay - Enjoy addictive tower defense gameplay that keeps you engaged for hours on end.",
+      "Sound Effects - Experience immersive sound effects that enhance the overall gaming experience."
+    ],
+    "trailer": "https://www.youtube.com/embed/8gDlwlq3vow",
     "technologies": [
       {
         "game client": [
