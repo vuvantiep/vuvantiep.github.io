@@ -1,0 +1,250 @@
+[
+  {
+    "title": "Havana Chronicles",
+    "description": "Havana Chronicle: Explore Havana's 3D vibrant world, collect and upgrade unique characters, and conquer PvE challenges. Engage in thrilling PvP battles, join guilds, complete quests, and unleash your team's skills in this visually stunning gacha game.",
+    "date": "2020 - 2023",
+    "detail": "Havana Chronicle is an immersive gacha game set in the vibrant world of Havana. As a player, you will embark on an adventure, exploring the Havana planet and training a team of unique characters. Collect items and resources to upgrade your team members and unlock their abilities. Manage your resources strategically to overcome challenges in PvE modes, ranging from easy to hard and nightmare difficulties. Engage in PvP battles in the arena to test your team's strength against other players. Join or create guilds for multiplayer interactions, collaborate with others, and compete in PvP battles. Complete quests, manage your inventory, and utilize a skill system to enhance your team's capabilities. With its captivating 3D graphics, Havana Chronicle provides an immersive and visually appealing gaming experience.",
+    "app": {
+      "url": "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
+      "url_iOS": "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
+      "imageLength": 7,
+      "imagePath": "images/havana_chronicile/"
+    },
+    "trailer": "https://www.youtube.com/embed/OJQlHxowLSg",
+    "features": [
+      "Login System: Utilize a login system that enables players to create accounts, log in securely, and save their progress across devices.",
+      "Gacha system: Offers a random reward system where players can spend in-game currency or real money to obtain rare or exclusive items.",
+      "Tutorial System: Provides a guided introduction to the game mechanics, features, and controls to help new players understand and navigate the game.",
+      "Quest-based progression: Utilizes quests or missions that players can undertake to progress in the game, earn rewards, and unlock new content.",
+      "Multiple game modes: Offers various modes or gameplay options, such as single-player, multiplayer, PvP (Player vs. Player), PvE (Player vs. Environment), etc., providing diverse and engaging experiences.",
+      "Upgrade and customize: Allows players to enhance and personalize their characters, equipment, or other in-game elements through upgrades, customization options, and improvements.",
+      "Join or create guilds: Enables players to join existing guilds or create their own, fostering social interaction, cooperation, and competition within the game community.",
+      "Skill System: Introduces a system where players can acquire and develop skills or abilities for their characters, enhancing their effectiveness in combat or other game scenarios.",
+      "Inventory System: Provides a mechanism to manage and organize items, equipment, resources, or other collectibles that players acquire throughout their gameplay.",
+      "Encyclopedia: Includes an in-game database or collection of information about characters, items, lore, or other game-related content, serving as a reference for players.",
+      "Mailbox: Offers an in-game messaging system where players can send and receive messages, gifts, or notifications from the game or other players.",
+      "In-game Chat: Facilitates real-time communication between players within the game, enabling social interaction, coordination, and community building.",
+      "Multiple Language: Play the game in different languages, catering to players from various regions and ensuring accessibility.",
+      "In-game Shop, Market: Provides a virtual marketplace where players can buy, sell, or trade in-game items, currencies, or other resources, often using in-game or real-world currency."
+    ],
+    "technologies": [
+      {
+        "game client": [
+          "Unity Engine",
+          "C#",
+          "RESTful API",
+          "SpawnPool",
+          "WebSocket Sharp",
+          "NGUI",
+          "AssetBundles Browser",
+          "CameraPath",
+          "iTween",
+          "MeshBaker",
+          "NavMeshExtension",
+          "Master Audio Plugin",
+          "SimpleZip",
+          "Mesh Simplify",
+          "JsonDotNet",
+          "Facebook SDK",
+          "Firebase SDK",
+          "Google SignIn",
+          "AppleAuth",
+          "NaverCafeSDK",
+          "Appsflyer",
+          "AntiCheatToolkit",
+          "Beebyte - Offucator"
+        ]
+      },
+      {
+        "Game Server": [
+          "C#",
+          "Unity uLink",
+          "RESTful API",
+          "WebSocket Sharp",
+          "MVC",
+          "AWS EC2"
+        ]
+      },
+      {
+        "Chat": ["C#", "WebSocket Sharp"]
+      },
+      {
+        "CMS": ["C#", "RESTful API", "MVC", "ASP.Net"]
+      },
+      {
+        "Web API": ["C#", "RESTful API", "MVC", "ASP.Net"]
+      },
+      {
+        "databases": ["MySQL"]
+      },
+      {
+        "Backend Infrastructure": [
+          "AWS",
+          "Google Cloud Service",
+          "Naver Cloud",
+          "Alibaba"
+        ]
+      },
+      {
+        "Others": [
+          "SVN - Subversion",
+          "Git",
+          "fttp server",
+          "shell bash",
+          "jira"
+        ]
+      }
+    ],
+    "role": "I am a versatile game developer specializing in HVN Chronicle, where my role encompasses various aspects of game development. With a focus on porting the game to different markets, I ensure that HVN Chronicle reaches a wider audience and adapts to specific market requirements. Additionally, I play a crucial role in implementing new features, constantly enhancing the gameplay experience and keeping it fresh for players. As a programmer, I bring my technical expertise to the table, working closely with the team to optimize performance, resolve issues, and maintain the game's stability. With my passion for game development and dedication to HVN Chronicle's success, I strive to deliver an exceptional gaming experience to players around the world."
+  },
+  {
+    "title": "Skull Arena",
+    "description": "A 2D multiplayer real-time strategy game featuring gacha mechanics, quests, and various game modes. Upgrade characters, inventory, and skills, while engaging in intense PvP battles and collaborative guild activities. Master resource management to dominate the arena in this immersive mobile gaming experience.",
+    "date": "2020 - 2023",
+    "detail": "Skull Arena is a multiplayer real-time strategy game available on the Google Play Store. In this game, players engage in intense battles, utilizing strategic tactics and managing resources to emerge victorious. The game incorporates gacha mechanics, allowing players to collect and summon unique characters with varying abilities and strengths. By completing quests and participating in various game modes, such as player versus environment (PvE) and player versus player (PvP), players can earn rewards and advance in the game. Progression involves upgrading characters, inventory, and skills to enhance their capabilities. Additionally, players can join or create guilds for multiplayer interactions, collaboration, and competing in guild-based activities. Skull Arena offers an immersive gaming experience that combines strategy, resource management, and multiplayer engagement.",
+    "app": {
+      "url": "https://play.google.com/store/apps/details?id=com.peoplug.skullarena&hl=en&gl=US",
+      "url_iOS": "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
+      "imageLength": 8,
+      "imagePath": "images/skull_arena/"
+    },
+    "features": [
+      "Login System: Utilize a login system that enables players to create accounts, log in securely, and save their progress across devices.",
+      "Team combat: Engage in strategic team-based battles where coordination and cooperation are key to success.",
+      "Gacha system: Collect and summon powerful characters or items through a random gacha mechanism.",
+      "Quest-based progression: Progress through the game by completing various quests and objectives, unlocking new content and rewards.",
+      "Multiple game modes: Enjoy different gameplay modes, such as PvP, PvE, dungeons, or challenges, providing diverse experiences.",
+      "Character and inventory upgrades: Enhance and customize your characters' abilities and equipment, improving their strength and effectiveness.",
+      "Guild system: Join or create guilds to collaborate with other players, participate in guild activities, and unlock exclusive benefits.",
+      "Character Skin: Customize the appearance of your characters with a variety of skins or cosmetic items.",
+      "Multiple Language: Play the game in different languages, catering to players from various regions and ensuring accessibility.",
+      "Ranking: Compete with other players and strive for higher rankings in leaderboards or competitive modes.",
+      "Pet: Acquire and raise pets to assist you in battles or provide various bonuses and benefits.",
+      "Crow: Interact with a crow companion that offers unique abilities or gameplay mechanics.",
+      "Auto Battle: Activate an automated battle system that allows your characters to fight on their own, reducing manual input.",
+      "Encyclopedia: Includes an in-game database or collection of information about characters, items, lore, or other game-related content, serving as a reference for players.",
+      "Artifacts: Discover and collect powerful artifacts that grant special abilities or buffs to your characters."
+    ],
+    "trailer": "https://www.youtube.com/embed/FCo3LufLPKU",
+    "technologies": [
+      {
+        "game client": [
+          "Unity Engine",
+          "C#",
+          "RESTful API",
+          "SpawnPool",
+          "Coroutine Manager Pro",
+          "AssetBundles Browser",
+          "ProCamera2D",
+          "SuperScrollView",
+          "SuperSocketClient",
+          "TextMesh Pro",
+          "Obfuscator",
+          "DOTween",
+          "Spine",
+          "SimpleZip",
+          "Sprite Packer",
+          "unity-ui-extensions",
+          "ConsolePro",
+          "Master Audio Plugin",
+          "Build Report Tool",
+          "SimpleJSON",
+          "MiniJSON",
+          "Mobile Notification",
+          "Facebook SDK",
+          "Firebase SDK",
+          "Google SignIn",
+          "AppleAuth",
+          "Appsflyer",
+          "Beebyte - Offucator"
+        ]
+      },
+      {
+        "backend": [
+          "C#",
+          "WebSocketSharp",
+          "SimpleZip",
+          "MiniJSON",
+          "RESTful API"
+        ]
+      },
+      {
+        "databases": ["Redis", "sqlite3", "MongoDB", "Firebase Storage"]
+      },
+      {
+        "Others": [
+          "SVN - Subversion",
+          "Git",
+          "fttp server",
+          "shell bash",
+          "jira"
+        ]
+      }
+    ],
+    "role": "I am a versatile game developer specializing in Skull Arena, where I am involved in all aspects of game development. My primary focus is on porting the game to different markets, ensuring its availability and success in various regions. Additionally, I actively contribute to implementing new features, constantly enhancing the gameplay experience and keeping it engaging for players. As a skilled programmer, I leverage my technical expertise to optimize performance, resolve issues, and maintain the game's stability. With my passion for game development and commitment to Skull Arena's growth, I strive to deliver an exceptional gaming experience to players worldwide."
+  },
+  {
+    "title": "Empire Warrior TD",
+    "description": "A strategic tower defense game set in a fantasy world. Defend your empire by strategically placing towers, summoning heroes, and unleashing powerful spells to defeat waves of enemies",
+    "date": "2018 - 2020",
+    "detail": "Empire Warriors TD: Tower Defense Games invites you to embark on an epic journey through a fantastical realm where you must defend your empire at all costs. Strategically place a wide array of towers along enemy pathways, each with unique abilities and upgrade paths. Unleash the power of heroes, summoning them to the battlefield to aid in the fight against relentless waves of enemies. Harness devastating spells to turn the tide in your favor, obliterating foes with meteor showers and elemental storms. Navigate diverse landscapes and confront formidable adversaries, from fearsome orcs to powerful dragons. Engage in challenging game modes, including the endless mode for the ultimate test of endurance. Collect resources, unlock new abilities, and fortify your defenses to protect the empire from the encroaching darkness. Immerse yourself in visually stunning graphics, captivating sound effects, and addictive tower defense gameplay that will keep you engaged for hours on end.",
+    "app": {
+      "url": "https://play.google.com/store/apps/details?id=com.zitga.empire.warriors.td.tower.defense&hl=en&gl=US",
+      "url_iOS": "https://apps.apple.com/us/app/empire-warriors-offline-games/id1329443393",
+      "imageLength": 8,
+      "imagePath": "images/empire_warrior_td/"
+    },
+    "features": [
+      "Tower Defense Strategy: A gameplay style where players strategically place towers to defend against waves of enemies.",
+      "Tower System: Allows players to build and upgrade various types of defensive towers to fend off enemy attacks.",
+      "Hero System: Introduces playable hero characters with unique abilities and skills that aid in the defense against enemies.",
+      "Controllable Combat System: Gives players the ability to directly control and command their units or heroes during battles.",
+      "In-game Upgrade System: Enables players to enhance their towers, heroes, or other gameplay elements through upgrades and advancements.",
+      "Adventure Game Mode: Offers a story-driven or campaign mode where players progress through different levels or stages with increasing difficulty.",
+      "Tournament: Provides competitive gameplay where players can participate in organized tournaments, competing against others for rewards and recognition.",
+      "Ranking System: Ranks players based on their performance, allowing them to compare their progress and skills with others.",
+      "Guild System: Allows players to form or join guilds, fostering social interaction, cooperation, and collaboration with other players.",
+      "Spell System: Introduces magical abilities or spells that players can use strategically to aid in defense or attack against enemies.",
+      "Tower Upgrade System: Allows players to improve and upgrade their towers over time, enhancing their effectiveness and capabilities.",
+      "Shop: Provides an in-game marketplace where players can purchase items, upgrades, or resources using in-game currency.",
+      "Missions System: Offers various missions or objectives for players to complete, providing additional challenges and rewards.",
+      "Encyclopedia: Contains a collection of information or lore about the game's characters, towers, enemies, or other in-game elements.",
+      "Hero Equipments: Allows players to equip their heroes with different gear or equipment to enhance their abilities and stats."
+    ],
+    "trailer": "https://www.youtube.com/embed/8gDlwlq3vow",
+    "technologies": [
+      {
+        "game client": [
+          "Unity Engine",
+          "C#",
+          "Spine",
+          "RESTful API",
+          "SpawnPool",
+          "AssetBundles Browser",
+          "DOTween",
+          "Master Audio Plugin",
+          "JsonDotNet",
+          "Build Report Tool",
+          "Mobile Console",
+          "Facebook SDK",
+          "Firebase SDK",
+          "Google Play Game",
+          "AppleAuth",
+          "Appsflyer",
+          "One Signal",
+          "IronSource",
+          "Unity Ads",
+          "Google Admob",
+          "AntiCheatToolkit"
+        ]
+      },
+      {
+        "backend": ["Java", "RESTful API", "Netty"]
+      },
+      {
+        "databases": ["MongoDB"]
+      }
+    ],
+    "role": "As a versatile game developer, I am deeply involved in all aspects of Empire Warrior TD's development. My primary role revolves around implementing new features that enhance the game's mechanics, UI, and overall gameplay experience. Additionally, I specialize in creating supporting tools to streamline the operation of the game, ensuring smooth backend functionality. With a strong focus on collaboration, I work closely with the team to develop innovative solutions and deliver engaging content to players. Through my expertise as a programmer, I strive to contribute to the success of Empire Warrior TD and create a captivating gaming experience for its players."
+  }
+]

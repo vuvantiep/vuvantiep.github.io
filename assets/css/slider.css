@@ -1,0 +1,58 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-list li {
+  flex: 0 0 100%;
+}
+
+.image-list img {
+  width: 100%;
+  height: auto;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+.bullet {
+  margin-right: 5px; /* Adjust the spacing between the bullet and the item text */
+  color: #000; /* Set the color of the bullet */
+}
+.section-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.section-center ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-center ul li {
+  margin: 0 10px;
+}
