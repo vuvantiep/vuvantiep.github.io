@@ -103,7 +103,8 @@
     "date": "2020 - 2023",
     "detail": "Skull Arena is a multiplayer real-time strategy game available on the Google Play Store. In this game, players engage in intense battles, utilizing strategic tactics and managing resources to emerge victorious. The game incorporates gacha mechanics, allowing players to collect and summon unique characters with varying abilities and strengths. By completing quests and participating in various game modes, such as player versus environment (PvE) and player versus player (PvP), players can earn rewards and advance in the game. Progression involves upgrading characters, inventory, and skills to enhance their capabilities. Additionally, players can join or create guilds for multiplayer interactions, collaboration, and competing in guild-based activities. Skull Arena offers an immersive gaming experience that combines strategy, resource management, and multiplayer engagement.",
     "app": {
-      "url": "https://play.google.com/store/apps/details?id=com.peoplug.skullarena&hl=en&gl=US",
+      "url": "https://play.google.com/store/apps/details?id=com.hvn.skullcg&hl=en_US",
+      "url2": "https://play.google.com/store/apps/details?id=com.peoplug.skullarena&hl=en&gl=US",
       "url_iOS": "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
       "imageLength": 8,
       "imagePath": "images/skull_arena/"
