@@ -11,11 +11,6 @@ function ProjectDetail({ project }) {
             <a href="#">{project.title}</a>
           </h2>
           <p>{project.detail}</p>
-          <iframe
-            width="80%"
-            height="400"
-            src="https://www.youtube.com/embed/pWQ1GJODblo"
-          ></iframe>
         </header>
         <div className="slider">
           <ul className="image-list">
@@ -28,15 +23,67 @@ function ProjectDetail({ project }) {
               ))}
           </ul>
         </div>
-        <ul className="actions special">
-          <li>
-            <a href={project.app.url} className="button large" target="_blank">
-              Details
-            </a>
-          </li>
-        </ul>
-
         <div>
+          <section className="section-center">
+            <iframe width="80%" height="400" src={project.trailer}></iframe>
+          </section>
+        </div>
+        <br></br>
+        <section>
+          <ul className="icons alt">
+            {/* <li>
+              Details
+            </li> */}
+            <li>
+              <a href={project.app.url} className="icon brands alt fa-android">
+                <span className="label">Android</span>
+              </a>
+            </li>
+            {/* <li>
+              <a
+                href={project.app.url_iOS}
+                className="icon brands alt fa-apple"
+              >
+                <span className="label">iOS</span>
+              </a>
+            </li> */}
+            {/* <li>
+              <a
+                href={project.trailer}
+                className="icon brands alt fa-youtube"
+              >
+                <span className="label">Youtube</span>
+              </a>
+            </li> */}
+          </ul>
+        </section>
+        <section>
+          <h2>Features</h2>
+          <ul>
+            {project.features &&
+              project.features.map((c, index) => (
+                <li key={index}>
+                  <span className="bullet">&#8226;</span> {c}
+                </li>
+              ))}
+          </ul>
+          <h2>Technologies</h2>
+          {project.technologies &&
+            project.technologies.map((technology, index) => (
+              <div className="column" key={index}>
+                <h4>{Object.keys(technology)[0]}</h4>
+                <ul>
+                  {technology[Object.keys(technology)[0]].map((x) => (
+                    <li key={x}>
+                      <span className="bullet">&#8226;</span> {x}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+        </section>
+
+        {/* <div>
           <div className="column">
             <h3>Client</h3>
             <ul>
