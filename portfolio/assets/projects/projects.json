@@ -66,31 +66,16 @@
         ]
       },
       {
-        "Chat": [
-          "C#",
-          "WebSocket Sharp"
-        ]
+        "Chat": ["C#", "WebSocket Sharp"]
       },
       {
-        "CMS": [
-          "C#",
-          "RESTful API",
-          "MVC",
-          "ASP.Net"
-        ]
+        "CMS": ["C#", "RESTful API", "MVC", "ASP.Net"]
       },
       {
-        "Web API": [
-          "C#",
-          "RESTful API",
-          "MVC",
-          "ASP.Net"
-        ]
+        "Web API": ["C#", "RESTful API", "MVC", "ASP.Net"]
       },
       {
-        "databases": [
-          "MySQL"
-        ]
+        "databases": ["MySQL"]
       },
       {
         "Backend Infrastructure": [
@@ -108,7 +93,8 @@
     "date": "2020 - 2023",
     "detail": "Skull Arena is a multiplayer real-time strategy game available on the Google Play Store. In this game, players engage in intense battles, utilizing strategic tactics and managing resources to emerge victorious. The game incorporates gacha mechanics, allowing players to collect and summon unique characters with varying abilities and strengths. By completing quests and participating in various game modes, such as player versus environment (PvE) and player versus player (PvP), players can earn rewards and advance in the game. Progression involves upgrading characters, inventory, and skills to enhance their capabilities. Additionally, players can join or create guilds for multiplayer interactions, collaboration, and competing in guild-based activities. Skull Arena offers an immersive gaming experience that combines strategy, resource management, and multiplayer engagement.",
     "app": {
-      "url": "https://play.google.com/store/apps/details?id=com.peoplug.skullarena&hl=en&gl=US",
+      "url": "https://play.google.com/store/apps/details?id=com.hvn.skullcg&hl=en_US",
+      "url2": "https://play.google.com/store/apps/details?id=com.peoplug.skullarena&hl=en&gl=US",
       "url_iOS": "https://play.google.com/store/apps/details?id=com.peoplug.havana&hl=en_US&pli=1",
       "imageLength": 8,
       "imagePath": "images/project2/"
@@ -147,9 +133,7 @@
         ]
       },
       {
-        "databases": [
-          "Firebase Storage"
-        ]
+        "databases": ["Firebase Storage"]
       }
     ]
   },
@@ -159,7 +143,8 @@
     "date": "2020 - 2023",
     "detail": "Empire Warriors TD: Tower Defense Games invites you to embark on an epic journey through a fantastical realm where you must defend your empire at all costs. Strategically place a wide array of towers along enemy pathways, each with unique abilities and upgrade paths. Unleash the power of heroes, summoning them to the battlefield to aid in the fight against relentless waves of enemies. Harness devastating spells to turn the tide in your favor, obliterating foes with meteor showers and elemental storms. Navigate diverse landscapes and confront formidable adversaries, from fearsome orcs to powerful dragons. Engage in challenging game modes, including the endless mode for the ultimate test of endurance. Collect resources, unlock new abilities, and fortify your defenses to protect the empire from the encroaching darkness. Immerse yourself in visually stunning graphics, captivating sound effects, and addictive tower defense gameplay that will keep you engaged for hours on end.",
     "app": {
-      "url": "https://play.google.com/store/apps/details?id=com.zitga.empire.warriors.td.tower.defense&hl=en&gl=US",
+      "url": "https://play.google.com/store/apps/details?id=com.hvn.skullcg&hl=en_US",
+      "url2": "https://play.google.com/store/apps/details?id=com.peoplug.skullarena&hl=en&gl=US",
       "url_iOS": "https://apps.apple.com/us/app/empire-warriors-offline-games/id1329443393",
       "imageLength": 8,
       "imagePath": "images/project3/"
@@ -201,9 +186,78 @@
         ]
       },
       {
-        "databases": [
-          "Firebase Storage"
+        "databases": ["Firebase Storage"]
+      }
+    ]
+  },
+  {
+    "title": "Collect Em All",
+    "description": "Collect Em All offers a unique twist on the match 3 genre, presenting an alternative gameplay experience.",
+    "date": "2023",
+    "detail": "",
+    "app": {
+      "url": "",
+      "url_iOS": "",
+      "imageLength": 6,
+      "imagePath": "images/project4/"
+    },
+    "features": [
+      "Collect Em All presents a fresh take on the match 3 genre, offering an innovative approach to casual gaming. Players engage in a dynamic challenge, striving to match as extensively as possible within each move to reach level targets. When faced with challenging goals, the game introduces items that aid progression, eliminating the need for repetitive attempts. The experience is further enriched by customization options, allowing players to explore various art skins and create personalized game boards. Collect Em All is a captivating fusion of strategy, problem-solving, and artistic expression, offering a vibrant and engaging gameplay adventure."
+    ],
+    "trailer": "",
+    "technologies": [
+      {
+        "game client": [
+          "Unity Engine",
+          "C#",
+          "LeanPool",
+          "DotTween",
+          "Facebook SDK",
+          "Firebase SDK",
+          "Google Ads",
+          "Unity Ads",
+          "Appsflyer"
         ]
+      },
+      {
+        "databases": [""]
+      }
+    ]
+  },
+  {
+    "title": "SandTris",
+    "description": "SandTris revolutionizes Tetris with an innovative twist",
+    "date": "2023",
+    "detail": "",
+    "app": {
+      "url": "",
+      "url_iOS": "",
+      "imageLength": 6,
+      "imagePath": "images/project5/"
+    },
+    "features": [
+      "SandTris is a unique take on the traditional Tetris game, offering players a fresh and innovative gameplay experience. While it retains the core mechanics of Tetris, SandTris introduces a novel twist that sets it apart.",
+      "In SandTris, players still manipulate falling blocks, just like in the classic game. However, once these blocks reach the bottom of the play area, they don't maintain their solid form. Instead, they dynamically transform and behave like flowing sand. This means that instead of forming a solid line, the blocks spread out and separate from one another, akin to the movement of individual grains of sand.",
+      "This innovative approach adds a layer of unpredictability and challenge to the game. Players must not only strategize about placing the falling blocks to complete lines, but they also need to consider how the sand-like blocks will spread and disperse after they've landed. This introduces a new dynamic that requires players to adapt their tactics and spatial awareness to the evolving arrangement of the blocks.",
+      "By incorporating this sand-like behavior, SandTris introduces an engaging and refreshing twist to the well-loved Tetris formula. It reimagines the traditional gameplay in a way that challenges players to think creatively and react quickly as they navigate the shifting sands of the game board."
+    ],
+    "trailer": "",
+    "technologies": [
+      {
+        "game client": [
+          "Unity Engine",
+          "C#",
+          "LeanPool",
+          "DotTween",
+          "Facebook SDK",
+          "Firebase SDK",
+          "Google Ads",
+          "Unity Ads",
+          "Appsflyer"
+        ]
+      },
+      {
+        "databases": [""]
       }
     ]
   }
